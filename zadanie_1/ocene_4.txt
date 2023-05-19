@@ -1,0 +1,3 @@
+Polecenie "git push" jest używane w systemie kontroli wersji Git do przesyłania lokalnych zmian do zdalnego repozytorium. 
+Głównym celem tego polecenia jest synchronizacja historii i zmian między lokalnym repozytorium Git a repozytorium zdalnym,
+takim jak repozytorium na platformie GitHub.

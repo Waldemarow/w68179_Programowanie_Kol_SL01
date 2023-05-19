@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularz rejestracyjny</title>
+</head>
+<body>
+  <h2>Formularz rejestracyjny</h2>
+  <form name="registrationForm" onsubmit="return validateForm()" method="post">
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" minlength="3" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Hasło:</label>
+    <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+    <label for="confirmPassword">Powtórz hasło:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+    <input type="checkbox" id="phoneCheckbox" name="phoneCheckbox" onclick="togglePhoneFields()"> Pokaż pole telefon i data urodzenia<br><br>
+
+    <div id="phoneFields" style="display: none;">
+      <label for="phone">Telefon:</label>
+      <input type="text" id="phone" name="phone" pattern="[0-9]+" title="Pole telefonu może zawierać tylko cyfry"><br><br>
+
+      <label for="birthday">Data urodzenia:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+    </div>
+
+    <input type="submit" value="Zarejestruj">
+  </form>
+
+  <script src="script_2.js"></script>
+</body>
+</html>
